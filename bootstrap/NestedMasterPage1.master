@@ -1,0 +1,21 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="NestedMasterPage1.master.cs" Inherits="bootstrap.NestedMasterPage1" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="mainContent" runat="server">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">TodoList.com</a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="TodoList.aspx">Todo</a></li>
+                <li class="nav-item"><a class="nav-link" href="MemberListPage.aspx">Personal Detail</a></li>
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+    </nav>
+    <asp:ContentPlaceHolder ID="bodyContent" runat="server">
+
+    </asp:ContentPlaceHolder>
+</asp:Content>
